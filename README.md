@@ -1,4 +1,4 @@
-@zapata/draft-js-markdown-plugin
+@zacapa/draft-js-markdown-plugin
 ==================================
 
 An opinionated [DraftJS] plugin for supporting Markdown syntax shortcuts in DraftJS. This plugin works with [DraftJS Plugins], and is a fork of the excellent [`draft-js-markdown-shortcuts-plugin`](https://github.com/ngs/draft-js-markdown-shortcuts-plugin) and [draft-js-markdown-plugin](https://github.com/withspectrum/draft-js-markdown-plugin).
@@ -19,7 +19,7 @@ Changes:
 ## Installation
 
 ```sh
-npm i --save @zapata/draft-js-markdown-plugin
+npm i --save @zacapa/draft-js-markdown-plugin
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ npm i --save @zapata/draft-js-markdown-plugin
 ```js
 import React, { Component } from 'react';
 import Editor from 'draft-js-plugins-editor';
-import createMarkdownPlugin from 'draft-js-markdown-plugin';
+import createMarkdownPlugin from '@zacapa/draft-js-markdown-plugin';
 import { EditorState } from 'draft-js';
 
 export default class DemoEditor extends Component {
@@ -79,7 +79,7 @@ class Editor extends Component {
 
 ## Options
 
-The `draft-js-markdown-plugin` is configurable. Just pass a config object. Here are the available options:
+The `@zacapa/draft-js-markdown-plugin` is configurable. Just pass a config object. Here are the available options:
 
 ### `renderLanguageSelect`
 
@@ -101,7 +101,7 @@ Code blocks render a select to switch syntax highlighting - `renderLanguageSelec
 #### Example:
 
 ```
-import createMarkdownPlugin from 'draft-js-markdown-plugin';
+import createMarkdownPlugin from '@zacapa/draft-js-markdown-plugin';
 
 const renderLanguageSelect = ({ options, onChange, selectedValue }) => (
   <select value={selectedValue} onChange={onChange}>
@@ -189,12 +189,12 @@ import { CHECKABLE_LIST_ITEM } from "draft-js-checkable-list-item"
 
 ### `entityType`
 
-To interoperate this plugin with other DraftJS plugins, i.e. [`draft-js-plugins`](https://github.com/draft-js-plugins/draft-js-plugins), you might need to customize the `LINK` and `IMAGE` entity type created by `draft-js-markdown-plugin`.
+To interoperate this plugin with other DraftJS plugins, i.e. [`draft-js-plugins`](https://github.com/draft-js-plugins/draft-js-plugins), you might need to customize the `LINK` and `IMAGE` entity type created by `@zacapa/draft-js-markdown-plugin`.
 
 #### Example:
 
 ```js
-import createMarkdownPlugin from "draft-js-markdown-plugin";
+import createMarkdownPlugin from "@zacapa/draft-js-markdown-plugin";
 import createFocusPlugin from "draft-js-focus-plugin";
 import createImagePlugin from "draft-js-image-plugin";
 
@@ -218,12 +218,12 @@ Writing is a core part of our app, and while the `markdown-shortcuts-plugin` is 
 
 ## License
 
-Licensed under the MIT license, Copyright Ⓒ 2017 Space Program Inc. This plugin is forked from the excellent [`draft-js-markdown-shortcuts-plugin`](https://github.com/ngs/draft-js-markdown-shortcuts-plugin) by [Atsushi Nagase](https://github.com/ngs).
+Licensed under the MIT license. This plugin is forked from the excellent [`draft-js-markdown-shortcuts-plugin`](https://github.com/ngs/draft-js-markdown-shortcuts-plugin) by [Atsushi Nagase](https://github.com/ngs).
 
-See [LICENSE] for the full license text.
+See [LICENSE](./LICENSE) for the full license text.
 
 [Demo]: https://markdown-plugin.spectrum.chat/
 [DraftJS]: https://facebook.github.io/draft-js/
 [DraftJS Plugins]: https://github.com/draft-js-plugins/draft-js-plugins
 [LICENSE]: ./LICENSE
-[npm]: https://www.npmjs.com/package/draft-js-markdown-plugin
+[npm]: https://www.npmjs.com/package/@zacapa/draft-js-markdown-plugin
