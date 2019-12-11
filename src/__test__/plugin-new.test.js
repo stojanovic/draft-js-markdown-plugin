@@ -24,7 +24,7 @@ describe("markdown", () => {
         })
       )
     );
-    expect(handleBeforeInput("*", before, { setEditorState })).toEqual(
+    expect(handleBeforeInput("*", before, 123, { setEditorState })).toEqual(
       "handled"
     );
     const raw = convertToRaw(
@@ -67,7 +67,7 @@ describe("markdown", () => {
         hasFocus: true,
       })
     );
-    expect(handleBeforeInput("a", before, { setEditorState })).toEqual(
+    expect(handleBeforeInput("a", before, 123, { setEditorState })).toEqual(
       "not-handled"
     );
   });
@@ -97,7 +97,7 @@ describe("markdown", () => {
         })
       )
     );
-    expect(handleBeforeInput("a", editorState, {})).toEqual("not-handled");
+    expect(handleBeforeInput("a", editorState, 123, {})).toEqual("not-handled");
   });
 
   it("should not have sticky inline styles", () => {
@@ -129,9 +129,9 @@ describe("markdown", () => {
       )
     );
 
-    expect(handleBeforeInput("a", editorState, { setEditorState })).toEqual(
-      "handled"
-    );
+    expect(
+      handleBeforeInput("a", editorState, 123, { setEditorState })
+    ).toEqual("handled");
     const raw = convertToRaw(
       setEditorState.mock.calls[0][0].getCurrentContent()
     );
@@ -177,9 +177,9 @@ describe("markdown", () => {
       )
     );
 
-    expect(handleBeforeInput("a", editorState, { setEditorState })).toEqual(
-      "handled"
-    );
+    expect(
+      handleBeforeInput("a", editorState, 123, { setEditorState })
+    ).toEqual("handled");
     const raw = convertToRaw(
       setEditorState.mock.calls[0][0].getCurrentContent()
     );

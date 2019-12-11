@@ -1,20 +1,25 @@
-draft-js-markdown-plugin
+@zapata/draft-js-markdown-plugin
 ==================================
 
-[![Build Status](https://travis-ci.org/withspectrum/draft-js-markdown-plugin.svg?branch=master)](https://travis-ci.org/withspectrum/draft-js-markdown-plugin)
-[![npm](https://img.shields.io/npm/v/draft-js-markdown-plugin.svg)][npm]
-<!-- [![Coverage Status](https://coveralls.io/repos/github/withspectrum/draft-js-markdown-plugin/badge.svg?branch=master)](https://coveralls.io/github/withspectrum/draft-js-markdown-plugin?branch=master) -->
-
-An opinionated [DraftJS] plugin for supporting Markdown syntax shortcuts in DraftJS. This plugin works with [DraftJS Plugins], and is a fork of the excellent [`draft-js-markdown-shortcuts-plugin`](https://github.com/ngs/draft-js-markdown-shortcuts-plugin) by [@ngs](https://github.com/ngs). (see [why fork that plugin](#why-fork-the-markdown-shortcuts-plugin) for more info)
+An opinionated [DraftJS] plugin for supporting Markdown syntax shortcuts in DraftJS. This plugin works with [DraftJS Plugins], and is a fork of the excellent [`draft-js-markdown-shortcuts-plugin`](https://github.com/ngs/draft-js-markdown-shortcuts-plugin) and [draft-js-markdown-plugin](https://github.com/withspectrum/draft-js-markdown-plugin).
 
 ![screen](screen.gif)
 
 [View Demo][Demo]
 
+## Why this fork exists?
+
+We needed a support for DraftJS version 0.11. This fork will be active until that support is added to the original plugin or @withspectrum's fork.
+
+Changes:
+
+- Add support for DraftJS 0.11 (and break version <= 0.10 support).
+- Update the demo.
+
 ## Installation
 
 ```sh
-npm i --save draft-js-markdown-plugin
+npm i --save @zapata/draft-js-markdown-plugin
 ```
 
 ## Usage

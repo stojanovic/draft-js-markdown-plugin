@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Editor from "draft-js-plugins-editor";
 
-import createMarkdownShortcutsPlugin from "draft-js-markdown-shortcuts-plugin"; // eslint-disable-line
+import createMarkdownShortcutsPlugin from "../../../../lib/index"; // eslint-disable-line
 import Draft, {
   convertToRaw,
   convertFromRaw,

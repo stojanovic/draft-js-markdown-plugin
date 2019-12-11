@@ -42,3 +42,4 @@ demo/public
 test-results.xml
 
 *.swp
+.DS_Store

@@ -381,7 +381,12 @@ const createMarkdownPlugin = (_config = {}) => {
 
       return "not-handled";
     },
-    handleBeforeInput(character, editorState, { setEditorState }) {
+    handleBeforeInput(
+      character,
+      editorState,
+      eventTimestamps,
+      { setEditorState }
+    ) {
       // If we're in a code block - don't transform markdown
       if (inCodeBlock(editorState)) return "not-handled";
 
